@@ -1,25 +1,7 @@
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<nav class="navbar navbar-expand">
   <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/">Today</a>
+      <a class="nav-item nav-link active" routerLink="/">Today</a>
       <a class="nav-item nav-link" routerLink="/tomorrow">Tomorrow</a>
   </div>
 </nav>
-
-<h1 class="text-center ">Things to do {{today}}!</h1>
-
-<div class="container">
-  <form #todoForm= "ngForm"(submit)="todoSubmit(todoForm.value); todoForm.resetForm()" >
-    <div class="form-group">
-      <div class="input-group-prepend">
-          <input type="text" #todo  class="form-control" placeholder="Add Todo" name="todo" ngModel>
-        <span class="input-group-text" (click)="addTodo(todo.value)">
-          <i class="fa fa-plus" aria-hidden="true"></i></span>
-      </div>
-    </div>
-    <div class="data">
-    <ul class="list-unstyled">
-      <li *ngFor="let todo of todoArray">{{todo}} <i (click)="deleteItem(todo)" class="fa fa-trash" aria-hidden="true"></i></li>
-    </ul>
-  </div>
-  </form>
-</div>
+<router-outlet></router-outlet>

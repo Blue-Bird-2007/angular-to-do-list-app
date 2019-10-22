@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Mansalva');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #f4f4f4;
+}
+
+.nav-item .nav-link .active{
+  color: #007bff;
+}
+
+.nav-item .nav-link {
+  color: #666666;
+}
+
+form {
+  max-width: 30em;
+  margin: 4em auto;
+  position: relative;
+  background: #f4f4f4;
+  padding: 2em 3em;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Mansalva";
+  color:#007bff;
+  margin-top: 1em;
+}
+
+form input[type=text]::placeholder {
+  font-family: "Mansalva";
+  color:#666666; 
+}
+
+form .data {
+  margin-top: 1em;
+}
+
+form .data li {
+ background: #ffffff;
+ border: 4px solid #007bff;
+ padding: 1em 0.5em;
+ margin: 0.5em auto;
+ color: #666666;
+ font-family: "Mansalva";
+}
+
+form .data li i {
+  float: right;
+  color: #888888;
+  cursor: pointer;
+}
+
+form .input-group-text {
+  background: #007bff;
+  width: 4em;
+  height: 3em;
+  padding: 1em 23px;
+  color: #ffffff;
+  position: absolute;
+  right: 47px;
+  cursor: pointer;
+}
+
+form .input-group-text .fa.fa-plus {
+  font-size: 1.5em;
+  margin-left: -1px;
+  margin-top: 2px;
+}
+
+.fa.fa-trash {
+  font-size: 24px;
+}
+
+form .input-group-text i {
+  font-size: 2em;
+}
+
+form .form-control {
+  height: 3em;
+  font-family: "Mansalva";
+}
+
+form .form-control:focus {
+  box-shadow: 0;
+}
